@@ -19,100 +19,97 @@
     }
     @keyframes pulse-ring {
       0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.6); }
-      70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(37, 99, 235, 0); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 8px rgba(37, 99, 235, 0); }
       100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(37, 99, 235, 0); }
     }
   </style>
 </head>
-<body class="bg-white text-slate-900 antialiased selection:bg-blue-900 selection:text-white">
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-900 selection:text-white">
 
-  <!-- 1. HEADER INSTITUCIONAL EN FONDO BLANCO -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+  <!-- 1. HEADER INSTITUCIONAL CON LOGOS OFICIALES -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <div class="flex items-center space-x-4">
-        <!-- LOGO CRUZ ROJA (Espacio preparado para tu imagen real) -->
-        <div class="flex items-center space-x-2">
-          <div class="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center font-black text-white text-2xl shadow-md">+</div>
-          <div>
-            <span class="font-extrabold text-slate-900 text-xs block leading-tight">CRUZ ROJA COLOMBIANA</span>
-            <span class="text-[10px] text-slate-500 font-medium block">Cundinamarca y Bogotá</span>
-          </div>
-        </div>
-        <div class="h-6 w-px bg-slate-200 mx-2"></div>
-        <!-- LOGO AAVANCE (Espacio preparado para tu imagen real) -->
-        <div class="flex items-center space-x-2">
-          <span class="font-black text-blue-900 tracking-wider text-xl">AAVANCE</span>
-          <span class="bg-blue-100 text-blue-900 text-[9px] font-bold px-2 py-0.5 rounded-full border border-blue-200">FORECASH</span>
-        </div>
+        <!-- LOGO CRUZ ROJA -->
+        <img src="Logo%20CRUZ%20ROJA%20horizontal.png" alt="Cruz Roja Colombiana" class="h-10 w-auto object-contain" onerror="this.onerror=null; this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_the_Red_Cross.svg/512px-Flag_of_the_Red_Cross.svg.png';" />
+        
+        <div class="h-8 w-px bg-slate-200 mx-1"></div>
+        
+        <!-- LOGO AAVANCE -->
+        <img src="LogoAAvance.png" alt="AAvance Fintech" class="h-9 w-auto object-contain" onerror="this.onerror=null; this.src='https://placehold.co/180x50/0f172a/ffffff?text=AAvance+ForeCash';" />
       </div>
 
-      <nav class="hidden md:flex items-center space-x-6 text-xs font-semibold text-slate-600">
-        <a href="#sinergia" class="hover:text-blue-900 transition">Alianza</a>
-        <a href="#fortaleza" class="hover:text-blue-900 transition">Fortaleza</a>
+      <nav class="hidden lg:flex items-center space-x-6 text-xs font-semibold text-slate-600">
+        <a href="#sinergia" class="hover:text-blue-900 transition">Sinergia</a>
         <a href="#ciclo" class="hover:text-blue-900 transition">Ciclo Emergencia</a>
         <a href="#casos" class="hover:text-blue-900 transition">Casos de Uso</a>
         <a href="#dashboard" class="hover:text-blue-900 transition">Dashboard Live</a>
-        <a href="#financiero" class="hover:text-blue-900 transition">Tarifas</a>
+        <a href="#financiero" class="hover:text-blue-900 transition">Tarifario</a>
       </nav>
 
       <button onclick="document.getElementById('dashboard').scrollIntoView({ behavior: 'smooth' })" class="bg-blue-900 hover:bg-blue-800 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md transition flex items-center space-x-2">
         <i data-lucide="layout-dashboard" class="w-4 h-4 text-amber-400"></i>
-        <span>Ver Dashboard</span>
+        <span>Probar Simulador</span>
       </button>
     </div>
   </header>
 
-  <!-- 2. HERO SECTION EN FONDO BLANCO / AZUL SUAVE -->
-  <section class="pt-12 pb-16 bg-gradient-to-b from-blue-50/60 via-white to-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <div class="inline-flex items-center space-x-2 bg-blue-100/80 border border-blue-200 px-4 py-1.5 rounded-full text-blue-900 text-xs font-bold uppercase tracking-wider mb-6">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-blue-700"></i>
+  <!-- 2. HERO SECTION CON FOTOGRAFÍA DE FONDO Y GRADIENTE -->
+  <section class="relative pt-16 pb-20 bg-slate-900 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-25">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop" alt="Ayuda Humanitaria" class="w-full h-full object-cover">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/95 to-blue-950/90"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-4 py-1.5 rounded-full text-blue-300 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
         <span>Tecnología e Innovación de Impacto Social</span>
       </div>
       
-      <h1 class="text-4xl lg:text-6xl font-black tracking-tight leading-tight text-slate-900 max-w-4xl mx-auto mb-6">
+      <h1 class="text-4xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl mx-auto mb-6">
         El Nuevo Estándar para la Respuesta a Emergencias en Colombia
       </h1>
       
-      <p class="text-slate-600 text-base lg:text-lg max-w-3xl mx-auto mb-10 font-normal leading-relaxed">
-        Unimos la máxima legitimidad en territorio de la <strong>Cruz Roja Colombiana</strong> con la potencia tecnológica fintech de <strong>AAvance</strong>: dispersión masiva 24/7, trazabilidad bancaria total y 0% riesgo operativo.
+      <p class="text-slate-300 text-base lg:text-lg max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+        Unimos la legitimidad operativa en terreno de la <strong>Cruz Roja Colombiana</strong> con la potencia fintech de <strong>AAvance</strong>: dispersiones masivas 24/7, trazabilidad bancaria total y 0% riesgo de sobregiro.
       </p>
 
-      <!-- MÉTRICAS CLAVE EN CAJAS BLANCAS -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-        <div class="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
-          <div class="text-3xl font-black text-blue-900">+$4.5M USD</div>
-          <div class="text-[11px] text-slate-500 font-medium mt-1">Dispersados con 0% fraude y 0% duplicidad</div>
+      <!-- METRICAS DESTACADAS CON ESTILO CRISTAL -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto bg-white/10 border border-white/15 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
+        <div class="text-center p-2">
+          <div class="text-3xl lg:text-4xl font-black text-blue-400">+$4.5M USD</div>
+          <div class="text-[11px] text-slate-300 font-medium mt-1">Dispersados con 0% fraude y 0% duplicidad</div>
         </div>
-        <div class="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
-          <div class="text-3xl font-black text-red-600">87.102</div>
-          <div class="text-[11px] text-slate-500 font-medium mt-1">Personas asistidas (Informe Cruz Roja 2025)</div>
+        <div class="text-center p-2">
+          <div class="text-3xl lg:text-4xl font-black text-red-500">87.102</div>
+          <div class="text-[11px] text-slate-300 font-medium mt-1">Personas asistidas (Informe Cruz Roja 2025)</div>
         </div>
-        <div class="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
-          <div class="text-3xl font-black text-emerald-600">67</div>
-          <div class="text-[11px] text-slate-500 font-medium mt-1">Emergencias atendidas en Cundinamarca/Bogotá</div>
+        <div class="text-center p-2">
+          <div class="text-3xl lg:text-4xl font-black text-emerald-400">67</div>
+          <div class="text-[11px] text-slate-300 font-medium mt-1">Emergencias atendidas en Cundinamarca/Bogotá</div>
         </div>
-        <div class="bg-white border border-slate-200 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
-          <div class="text-3xl font-black text-amber-600">ISO 9001</div>
-          <div class="text-[11px] text-slate-500 font-medium mt-1">1er Voluntariado certificado en Colombia</div>
+        <div class="text-center p-2">
+          <div class="text-3xl lg:text-4xl font-black text-amber-400">ISO 9001</div>
+          <div class="text-[11px] text-slate-300 font-medium mt-1">1er Voluntariado certificado en Colombia</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. LA SINERGIA GANADORA (ALIANZA INSUPERABLE) -->
-  <section id="sinergia" class="py-16 bg-slate-50 border-y border-slate-200">
+  <!-- 3. SINERGIA GANADORA -->
+  <section id="sinergia" class="py-16 bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Una Alianza Única</h2>
-        <h3 class="text-3xl font-bold text-slate-900">¿Por qué este binomio es el único capaz de liderar la transformación?</h3>
+        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Una Alianza Imparable</h2>
+        <h3 class="text-3xl font-bold text-slate-900">¿Por qué este binomio es el único capaz de liderar el país?</h3>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8">
         <!-- CRUZ ROJA COLOMBIANA -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition">
+        <div class="bg-gradient-to-br from-red-50/50 to-white border border-red-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition">
           <div class="flex items-center space-x-3 mb-6">
-            <div class="w-12 h-12 bg-red-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-md shadow-red-600/20">+</div>
+            <div class="w-12 h-12 bg-red-600 text-white rounded-2xl flex items-center justify-center font-black text-2xl shadow-lg shadow-red-600/30">+</div>
             <div>
               <h4 class="font-extrabold text-xl text-slate-900">Cruz Roja Colombiana</h4>
               <p class="text-xs text-slate-500 font-medium">Seccional Cundinamarca y Bogotá</p>
@@ -121,7 +118,7 @@
           <ul class="space-y-3.5 text-xs text-slate-700 font-normal">
             <li class="flex items-start space-x-3">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-red-600 shrink-0 mt-0.5"></i>
-              <span><strong>Despliegue e Imparcialidad:</strong> Neutralidad absoluta con respuesta inmediata a 67 emergencias (sismos Paratebueno, avalanchas Quetame, Silvania).</span>
+              <span><strong>Despliegue e Imparcialidad:</strong> Neutralidad con respuesta inmediata a 67 emergencias (sismos Paratebueno, avalanchas Quetame, Silvania).</span>
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-red-600 shrink-0 mt-0.5"></i>
@@ -129,15 +126,15 @@
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="check-circle-2" class="w-4 h-4 text-red-600 shrink-0 mt-0.5"></i>
-              <span><strong>Mantenimiento Nutricional y Salud:</strong> Más de 381.000 kilos de alimentos distribuidos y 403.000 atenciones médicas en unidades SAMU.</span>
+              <span><strong>Impacto en Salud y Nutrición:</strong> Más de 381.000 kilos de alimentos entregados y 403.000 atenciones médicas en unidades SAMU.</span>
             </li>
           </ul>
         </div>
 
         <!-- AAVANCE FINTECH -->
-        <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition">
+        <div class="bg-gradient-to-br from-blue-50/50 to-white border border-blue-100 rounded-3xl p-8 shadow-sm hover:shadow-md transition">
           <div class="flex items-center space-x-3 mb-6">
-            <div class="w-12 h-12 bg-blue-900 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-md shadow-blue-900/20">AA</div>
+            <div class="w-12 h-12 bg-blue-900 text-white rounded-2xl flex items-center justify-center font-black text-xl shadow-lg shadow-blue-900/30">AA</div>
             <div>
               <h4 class="font-extrabold text-xl text-slate-900">AAvance Fintech</h4>
               <p class="text-xs text-slate-500 font-medium">Infraestructura Financiera de Última Milla</p>
@@ -146,11 +143,11 @@
           <ul class="space-y-3.5 text-xs text-slate-700 font-normal">
             <li class="flex items-start space-x-3">
               <i data-lucide="award" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
-              <span><strong>Acelerador Mundial WFP:</strong> Primera y única Fintech de América Latina en el <i>Sprint Portfolio</i> del **World Food Programme Innovation Accelerator**.</span>
+              <span><strong>WFP Innovation Accelerator:</strong> Primera y única Fintech de Latinoamérica en el <i>Sprint Portfolio</i> del Programa Mundial de Alimentos.</span>
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="shield-check" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
-              <span><strong>Seguridad Regulada:</strong> Alianza oficial con **Visa** (Visa Direct), ciberseguridad **PCI-DSS** y respaldo de **cores bancarios vigilados por la SFC**.</span>
+              <span><strong>Seguridad Regulada:</strong> Alianza estratégica con **Visa** (Visa Direct), ciberseguridad **PCI-DSS** y respaldo de **cores bancarios vigilados por la SFC**.</span>
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="zap" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
@@ -162,37 +159,8 @@
     </div>
   </section>
 
-  <!-- 4. LA GRAN FORTALEZA (ARGUMENTO DE IDONEIDAD) -->
-  <section id="fortaleza" class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="bg-gradient-to-r from-blue-900 to-indigo-950 rounded-3xl p-8 lg:p-12 text-white shadow-xl">
-        <div class="max-w-3xl">
-          <span class="bg-blue-500/20 text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block border border-blue-400/30">Diferenciador Absoluto</span>
-          <h3 class="text-2xl lg:text-4xl font-black mb-6">Un Ecosistema Humano y Tecnológico Sin Equivalentes en Colombia</h3>
-          <p class="text-slate-200 text-xs lg:text-sm leading-relaxed mb-6 font-light">
-            A diferencia de las entidades financieras tradicionales, cuyo modelo comercial rígido carece de la agilidad y empatía requeridas en una crisis, esta alianza ofrece un ecosistema nativo para la atención de emergencias:
-          </p>
-          <div class="grid md:grid-cols-3 gap-4 text-xs font-medium text-slate-300">
-            <div class="bg-white/10 p-4 rounded-xl backdrop-blur">
-              <strong class="text-white block mb-1">Core Transaccional Propio:</strong>
-              Dispersión masiva sin cuellos de botella ni intermediarios comunes.
-            </div>
-            <div class="bg-white/10 p-4 rounded-xl backdrop-blur">
-              <strong class="text-white block mb-1">Ciberseguridad PCI-DSS & Visa:</strong>
-              Protección de grado bancario para los datos sensibles de beneficiarios.
-            </div>
-            <div class="bg-white/10 p-4 rounded-xl backdrop-blur">
-              <strong class="text-white block mb-1">Propósito Humanitario Validado:</strong>
-              Aprobado por el Programa Mundial de Alimentos y más de 12 ONGs globales.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. CICLO DE VIDA COMPLETO DE LA EMERGENCIA (3 FASES) -->
-  <section id="ciclo" class="py-16 bg-slate-50 border-t border-slate-200">
+  <!-- 4. CICLO DE EMERGENCIA (3 FASES) -->
+  <section id="ciclo" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Cobertura End-to-End</h2>
@@ -200,96 +168,142 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <!-- FASE 1: ACCION ANTICIPATORIA -->
-        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-          <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Fase 1: Prevención</span>
-          <h4 class="font-bold text-base text-slate-900 mt-3 mb-2">Acción Anticipatoria</h4>
+        <div class="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <span class="bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">1. Prevención</span>
+          <h4 class="font-bold text-base text-slate-900 mt-4 mb-2">Acción Anticipatoria</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Inyección de liquidez basada en alertas tempranas (Google Floods/EWS) días antes del desastre. Reduce en un 36% las familias que omiten comidas durante la inundación.
+            Inyección de recursos basada en alertas tempranas meteorológicas (EWS) días antes del desastre. Reducción del 36% en familias que omiten comidas durante la crisis.
           </p>
         </div>
 
-        <!-- FASE 2: RESPUESTA INMEDIATA -->
-        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-          <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Fase 2: Crisis 24/7</span>
-          <h4 class="font-bold text-base text-slate-900 mt-3 mb-2">Respuesta Inmediata Bre-B</h4>
+        <div class="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <span class="bg-red-100 text-red-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">2. Emergencia 24/7</span>
+          <h4 class="font-bold text-base text-slate-900 mt-4 mb-2">Respuesta Inmediata Bre-B</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Dispersión instantánea 24/7 a cualquier banco, Nequi o DaviPlata. Red física de 40.000 corresponsales (Efecty, Gana, Red Aval) para el 4% no bancarizado.
+            Dispersión instantánea 24/7 a cualquier banco, Nequi o DaviPlata. Efectivo en más de 40.000 corresponsales físicos (Efecty, Gana, Red Aval) para el sector no bancarizado.
           </p>
         </div>
 
-        <!-- FASE 3: RECONSTRUCCION -->
-        <div class="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-          <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">Fase 3: Post-Evento</span>
-          <h4 class="font-bold text-base text-slate-900 mt-3 mb-2">Reconstrucción y Hábitat</h4>
+        <div class="bg-white border border-slate-200 p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <span class="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-1 rounded-full uppercase">3. Post-Evento</span>
+          <h4 class="font-bold text-base text-slate-900 mt-4 mb-2">Reconstrucción y Hábitat</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Gestión programada 5x8 para capital semilla, reubicación, pagos de arriendos temporales, mercados y pago directo a proveedores de construcción.
+            Gestión programada 5x8 para capital semilla, reubicación, pagos de arriendos temporales, mercados y pago directo a proveedores de construcción con factura.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 6. CASOS DE USO TANGIBLES -->
+  <!-- 5. CASOS DE USO TANGIBLES (TARJETAS DINÁMICAS CON FOTOS INTERACTIVAS) -->
   <section id="casos" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Funcionalidades Múltiples</h2>
-        <h3 class="text-3xl font-bold text-slate-900">Casos de Uso Operativo de la Plataforma</h3>
+        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Versatilidad Operativa</h2>
+        <h3 class="text-3xl font-bold text-slate-900">Casos de Uso Intermitentes (Haz Clic para Explorar)</h3>
+        <p class="text-xs text-slate-500 mt-2">Selecciona cualquier tarjeta para desplegar su ficha de operación detallada.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="heart-handshake" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Transferencias Directas (CVA)</h4>
-          <p class="text-xs text-slate-600">Entregas monetarias no condicionadas para la subsistencia de familias afectadas.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- TARJETA 1: CVA -->
+        <div onclick="abrirCasoModal('Transferencias Monetarias (CVA)', 'Entregas de dinero no condicionadas de libre destinación para familias afectadas en emergencia. Permite reactivar la economía local e inyectar recursos de subsistencia inmediata sin costos de retiro para el beneficiario.', 'Asistencia Humanitaria Directa', 'https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="CVA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Transferencias Directas (CVA)</h4>
+            <p class="text-xs text-slate-600">Subsidios monetarios de subsistencia directa a familias afectadas.</p>
+          </div>
         </div>
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="store" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Capital Semilla y Reactivación</h4>
-          <p class="text-xs text-slate-600">Fondos para la recuperación de pequeños comercios, cultivos y unidades productivas.</p>
+
+        <!-- TARJETA 2: CAPITAL SEMILLA -->
+        <div onclick="abrirCasoModal('Capital Semilla y Reactivación', 'Desembolsos dirigidos a pequeños comerciantes, campesinos y emprendedores vulnerables para la reposición de inventarios, insumos y herramientas perdidas durante el desastre.', 'Reactivación Económica Local', 'https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop" alt="Capital Semilla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Capital Semilla & Comercios</h4>
+            <p class="text-xs text-slate-600">Fondos de recuperación para pequeños agricultores y negocios locales.</p>
+          </div>
         </div>
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="home" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Arriendos y Materiales de Hábitat</h4>
-          <p class="text-xs text-slate-600">Pago de cánones temporales y desembolsos a ferreterías para reconstrucción.</p>
+
+        <!-- TARJETA 3: ARRIENDOS Y HÁBITAT -->
+        <div onclick="abrirCasoModal('Arriendos Temporales y Hábitat', 'Pago de cánones de arrendamiento temporal para familias reubicadas y transferencias a ferreterías de la zona para compra de materiales de construcción.', 'Hábitat y Vivienda', 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Arriendos y Hábitat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Subsidios de Arriendo & Materiales</h4>
+            <p class="text-xs text-slate-600">Pago de cánones temporales y desembolsos a proveedores de reconstrucción.</p>
+          </div>
         </div>
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="truck" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Pago a Proveedores y Logística</h4>
-          <p class="text-xs text-slate-600">Liquidación masiva a proveedores de alimentos y transporte con factura cargada.</p>
+
+        <!-- TARJETA 4: PROVEEDORES -->
+        <div onclick="abrirCasoModal('Pago a Proveedores y Logística', 'Liquidación automatizada a transportadores, distribuidores de mercados y proveedores de insumos de emergencia con soporte de factura cargada en la plataforma.', 'Gobernanza de Tesorería', 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Proveedores" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-slate-900 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Pago a Proveedores & Logística</h4>
+            <p class="text-xs text-slate-600">Liquidación masiva a cadenas de abastecimiento con soporte contable.</p>
+          </div>
         </div>
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="credit-card" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Fondeos y Tarjetas para Staff</h4>
-          <p class="text-xs text-slate-600">Tarjetas Visa corporativas para viáticos y compras operativas de brigadistas.</p>
+
+        <!-- TARJETA 5: TARJETAS STAFF -->
+        <div onclick="abrirCasoModal('Fondeos y Tarjetas Visa para Staff', 'Emisión y fondeo inmediato de tarjetas Visa marca compartida para viáticos, compras operativas y gastos de campo de socorristas y brigadistas.', 'Operación de Campo', 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" alt="Tarjetas Staff" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Tarjetas Visa Corporativas Staff</h4>
+            <p class="text-xs text-slate-600">Viáticos y caja menor digital para voluntarios y brigadistas en terreno.</p>
+          </div>
         </div>
-        <div class="p-5 border border-slate-200 rounded-2xl bg-slate-50/50">
-          <i data-lucide="shopping-bag" class="w-6 h-6 text-blue-900 mb-3"></i>
-          <h4 class="font-bold text-sm text-slate-900 mb-1">Mercados y Bonos Canjeables</h4>
-          <p class="text-xs text-slate-600">Dispersión de bonos digitales canjeables en cadenas de abastecimiento local.</p>
+
+        <!-- TARJETA 6: BONOS DIGITALES -->
+        <div onclick="abrirCasoModal('Mercados y Bonos Canjeables', 'Emisión de códigos de dispersión digitales canjeables en superetes y cadenas de supermercados locales para abastecimiento alimentario.', 'Seguridad Alimentaria', 'https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop" alt="Mercados" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+            <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
+          </div>
+          <div class="p-6 bg-white">
+            <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Bonos Canjeables por Alimentos</h4>
+            <p class="text-xs text-slate-600">Dispersión de códigos digitales para compras directas en tiendas aliadas.</p>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- 7. SIMULADOR DE DASHBOARD INTERACTIVO (CLIC EN PUNTOS) -->
+  <!-- 6. SIMULADOR DE DASHBOARD INTERACTIVO -->
   <section id="dashboard" class="py-16 bg-slate-100 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-10">
         <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Simulador de Control SaaS</h2>
         <h3 class="text-3xl font-bold text-slate-900">Centro de Control Presupuestal y Dispersión 24/7</h3>
-        <p class="text-xs text-slate-600 mt-2">Haz clic en las tarjetas numeradas para inspeccionar la gobernanza en vivo.</p>
+        <p class="text-xs text-slate-600 mt-2">Prueba el motor transaccional haciendo clic en los botones de inspección.</p>
       </div>
 
       <!-- MOCKUP DEL DASHBOARD -->
       <div class="max-w-5xl mx-auto bg-white rounded-3xl border border-slate-300 shadow-xl overflow-hidden">
         
-        <!-- HEADER MOCKUP -->
         <div class="bg-slate-900 text-white p-6 flex flex-wrap items-center justify-between gap-4">
           <div>
             <span class="text-[11px] text-slate-400 block uppercase font-mono">Proyecto Activo:</span>
-            <h4 class="text-base font-bold text-white">Gobernación Cundinamarca - Fondo de Gestión del Riesgo</h4>
+            <h4 class="text-base font-bold text-white">ENTIDAD / INSTITUCIÓN ALIADA - Fondo de Emergencias</h4>
           </div>
           <div class="flex items-center space-x-6">
             <div>
@@ -303,9 +317,8 @@
           </div>
         </div>
 
-        <!-- MOCKUP ACCIONES CON HOTSPOTS CLICABLES -->
+        <!-- ACCIONES CLICABLES CON HOTSPOTS -->
         <div class="p-6 bg-slate-50 border-b border-slate-200 grid md:grid-cols-4 gap-4">
-          
           <div onclick="mostrarDetalle('prefondeo')" class="cursor-pointer bg-white p-4 rounded-xl border border-slate-200 shadow-sm hover:border-blue-500 transition relative">
             <div class="absolute -top-2 -right-2 w-5 h-5 bg-blue-600 text-white rounded-full flex items-center justify-center text-[10px] font-bold hotspot-pulse">1</div>
             <div class="text-[10px] text-slate-500 font-bold uppercase">Pre-fondeo</div>
@@ -329,10 +342,8 @@
             <div class="text-[10px] text-slate-500 font-bold uppercase">Reportería SFTP</div>
             <div class="text-xs font-bold text-emerald-600 mt-1">Entrega en 6 Horas</div>
           </div>
-
         </div>
 
-        <!-- PANEL DE DETALLE CLICABLE -->
         <div id="modal-detalle" class="p-5 bg-blue-50 border-b border-slate-200 text-xs">
           <div class="flex items-center space-x-2 text-blue-900 font-bold uppercase mb-1">
             <i data-lucide="info" class="w-4 h-4"></i>
@@ -343,7 +354,6 @@
           </p>
         </div>
 
-        <!-- BOTÓN DE DISPERSIÓN Y TABLA LIVE -->
         <div class="p-6">
           <div class="flex justify-between items-center mb-4">
             <span class="text-xs font-bold text-slate-700 flex items-center space-x-2">
@@ -394,19 +404,20 @@
     </div>
   </section>
 
-  <!-- 8. ESQUEMA FINANCIERO Y MODELO DE CO-INVERSIÓN EN TABLAS -->
+  <!-- 7. ESQUEMA FINANCIERO INTERACTIVO EN TABLAS -->
   <section id="financiero" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Propuesta Comercial y Co-inversión</h2>
-        <h3 class="text-3xl font-bold text-slate-900">Esquema Financiero y Tarifario de la Alianza</h3>
+        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Modelo Comercial Generico</h2>
+        <h3 class="text-3xl font-bold text-slate-900">Esquema Financiero y Tarifario para la ENTIDAD</h3>
+        <p class="text-xs text-slate-500 mt-2">Haz clic en cualquier canal para ver las condiciones operativas de liquidación.</p>
       </div>
 
-      <!-- TABLA 1: APORTE EN ESPECIE -->
+      <!-- TABLA 1: INFRAESTRUCTURA SAAS -->
       <div class="mb-10">
         <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-2">
-          <i data-lucide="gift" class="w-4 h-4 text-blue-900"></i>
-          <span>1. Infraestructura Tecnológica (Aporte 100% en Especie)</span>
+          <i data-lucide="server" class="w-4 h-4 text-blue-900"></i>
+          <span>1. Licenciamiento e Infraestructura Tecnológica</span>
         </h4>
         <div class="overflow-x-auto border border-slate-200 rounded-2xl shadow-sm">
           <table class="w-full text-left text-xs">
@@ -414,15 +425,15 @@
               <tr>
                 <th class="p-3">Concepto</th>
                 <th class="p-3">Valor de Mercado</th>
-                <th class="p-3">Aporte Alianza Cruz Roja - AAvance</th>
-                <th class="p-3">Costo para la Gobernación</th>
+                <th class="p-3">Aporte de la Alianza</th>
+                <th class="p-3">Costo Neto para la Entidad</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-700">
               <tr>
-                <td class="p-3 font-semibold">Infraestructura SaaS ForeCash / DisCash</td>
+                <td class="p-3 font-semibold">Plataforma SaaS ForeCash / DisCash Multi-proyecto</td>
                 <td class="p-3 font-mono">$200.000.000 COP</td>
-                <td class="p-3 font-bold text-emerald-600">100% en Especie ($200.000.000 COP)</td>
+                <td class="p-3 font-bold text-emerald-600">Cobertura 100% de la plataforma</td>
                 <td class="p-3 font-bold text-blue-900">$0 COP</td>
               </tr>
             </tbody>
@@ -434,7 +445,7 @@
       <div class="mb-10">
         <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-2">
           <i data-lucide="headphones" class="w-4 h-4 text-blue-900"></i>
-          <span>2. Soporte, Monitoreo y Mantenimiento Técnico (Sept-Dic 2026)</span>
+          <span>2. Soporte, Monitoreo y Mantenimiento Técnico</span>
         </h4>
         <div class="overflow-x-auto border border-slate-200 rounded-2xl shadow-sm">
           <table class="w-full text-left text-xs">
@@ -442,64 +453,62 @@
               <tr>
                 <th class="p-3">Concepto</th>
                 <th class="p-3">Costo Nominal Mensual</th>
-                <th class="p-3">Subsidio Alianza (50%)</th>
+                <th class="p-3">Subsidio Co-contribución (50%)</th>
                 <th class="p-3">Costo Neto Mensual</th>
-                <th class="p-3">Total Inversión (4 Meses)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-700">
               <tr>
-                <td class="p-3 font-semibold">Soporte 5x8 + Monitoreo Dispersión 24/7</td>
+                <td class="p-3 font-semibold">Soporte Operativo 5x8 + Monitoreo 24/7</td>
                 <td class="p-3 font-mono">$4.000.000 COP + IVA</td>
                 <td class="p-3 text-emerald-600 font-semibold">-$2.000.000 COP + IVA</td>
                 <td class="p-3 font-bold text-blue-900">$2.000.000 COP + IVA</td>
-                <td class="p-3 font-bold text-slate-900">$8.000.000 COP + IVA</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <!-- TABLA 3: TARIFAS DE DISPERSION -->
+      <!-- TABLA 3: TARIFAS DE DISPERSION INTERACTIVAS -->
       <div>
         <h4 class="text-sm font-bold text-slate-900 mb-3 flex items-center space-x-2">
           <i data-lucide="send" class="w-4 h-4 text-blue-900"></i>
-          <span>3. Tarifas por Transacción Exitosa (Modelo ResiRed - Cero Costo al Beneficiario)</span>
+          <span>3. Tarifas por Transacción Exitosa (Haz clic en la fila para inspeccionar)</span>
         </h4>
         <div class="overflow-x-auto border border-slate-200 rounded-2xl shadow-sm">
-          <table class="w-full text-left text-xs">
+          <table class="w-full text-left text-xs cursor-pointer">
             <thead class="bg-slate-50 border-b border-slate-200 font-bold text-slate-700">
               <tr>
                 <th class="p-3">Canal de Dispersión</th>
                 <th class="p-3">Tarifa Unitario</th>
-                <th class="p-3">Tiempo de Acreditación</th>
+                <th class="p-3">SLA de Entrega</th>
+                <th class="p-3">Costo al Beneficiario</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-700">
-              <tr>
-                <td class="p-3 font-semibold">Billeteras Propias (AAvance / AAvance Dale!)</td>
+              <tr onclick="abrirCasoModal('Billeteras Propias (AAvance / Dale!)', 'Transacción instantánea en el ecosistema propio de tarjetas y cuentas digitales. Sin fricción bancaria.', 'Tarifa Preferencial', '')" class="hover:bg-blue-50/50 transition">
+                <td class="p-3 font-semibold">Billeteras Propias (AAvance / Dale!)</td>
                 <td class="p-3 font-mono font-bold">$1.260 COP + IVA</td>
                 <td class="p-3">Instantáneo 24/7</td>
+                <td class="p-3 font-bold text-emerald-600">$0 COP (100% Gratuito)</td>
               </tr>
-              <tr class="bg-blue-50/30">
+              <tr onclick="abrirCasoModal('Bre-B (Open Finance - Cualquier Banco)', 'El riel oficial de pagos rápidos del país. Permite acreditación inmediata 24/7 a cualquier entidad financiera registrada.', 'Canal Estrella 24/7', '')" class="bg-blue-50/40 hover:bg-blue-100/50 transition">
                 <td class="p-3 font-bold text-blue-900">Bre-B (Open Finance - Cualquier Banco)</td>
                 <td class="p-3 font-mono font-bold text-blue-900">$1.300 COP + IVA</td>
-                <td class="p-3 font-bold text-blue-900">Instantáneo 24/7 (Canal Estrella)</td>
+                <td class="p-3 font-bold text-blue-900">Instantáneo 24/7</td>
+                <td class="p-3 font-bold text-emerald-600">$0 COP (100% Gratuito)</td>
               </tr>
-              <tr>
+              <tr onclick="abrirCasoModal('Billeteras Externas (Nequi / DaviPlata)', 'Dispersión directa a los depósitos de bajo monto con mayor penetración en Colombia.', 'Gran Cobertura', '')" class="hover:bg-blue-50/50 transition">
                 <td class="p-3 font-semibold">Billeteras Externas (Nequi / DaviPlata)</td>
                 <td class="p-3 font-mono font-bold">$1.500 COP + IVA</td>
                 <td class="p-3">Instantáneo 24/7</td>
+                <td class="p-3 font-bold text-emerald-600">$0 COP (100% Gratuito)</td>
               </tr>
-              <tr>
-                <td class="p-3 font-semibold">ACH Standard (Cualquier Banco)</td>
-                <td class="p-3 font-mono font-bold">$2.300 COP + IVA</td>
-                <td class="p-3">Ciclos Interbancarios</td>
-              </tr>
-              <tr>
-                <td class="p-3 font-semibold">Corresponsales Físicos (Coopcentral/Efecty/Gana/Aval)</td>
+              <tr onclick="abrirCasoModal('Corresponsales Físicos (Efectivo)', 'Garantiza la entrega de dinero físico en zonas rurales no bancarizadas a través de más de 40.000 puntos en todo el país.', 'Última Milla Rural', '')" class="hover:bg-blue-50/50 transition">
+                <td class="p-3 font-semibold">Corresponsales Físicos (Coopcentral / Efecty / Gana / Aval)</td>
                 <td class="p-3 font-mono font-bold">$3.400 - $4.500 COP + IVA</td>
                 <td class="p-3">Máximo 48 Horas Hábiles</td>
+                <td class="p-3 font-bold text-emerald-600">$0 COP (100% Gratuito)</td>
               </tr>
             </tbody>
           </table>
@@ -509,12 +518,12 @@
     </div>
   </section>
 
-  <!-- 9. ANEXO TÉCNICO, CIBERSEGURIDAD Y BOT DE DISPERSIÓN -->
+  <!-- 8. ANEXO TÉCNICO Y BOT DE DISPERSIÓN -->
   <section class="py-16 bg-slate-50 border-t border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Especificaciones Técnicas</h2>
-        <h3 class="text-3xl font-bold text-slate-900">Ciberseguridad, Soporte y BOT de Dispersión</h3>
+        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Seguridad y Soporte</h2>
+        <h3 class="text-3xl font-bold text-slate-900">Ciberseguridad, Atenciones y BOT 24/7</h3>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
@@ -522,7 +531,7 @@
           <i data-lucide="shield" class="w-6 h-6 text-blue-900 mb-3"></i>
           <h4 class="font-bold text-sm text-slate-900 mb-2">Ciberseguridad & Habeas Data</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Cifrado <strong>TLS 1.2</strong> en tránsito, <strong>AES-256</strong> en reposo, certificación de grado bancario <strong>PCI-DSS</strong> y cumplimiento de la <strong>Ley 1581 de 2012</strong>.
+            Cifrado <strong>TLS 1.2</strong> en tránsito, <strong>AES-256</strong> en reposo, certificación de grado bancario <strong>PCI-DSS</strong> y cumplimiento estricto de la <strong>Ley 1581 de 2012</strong>.
           </p>
         </div>
 
@@ -530,7 +539,7 @@
           <i data-lucide="headphones" class="w-6 h-6 text-blue-900 mb-3"></i>
           <h4 class="font-bold text-sm text-slate-900 mb-2">Soporte Corporativo 5x8</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Atención personalizada para los administradores y tesoreros de la entidad vía <strong>Línea Telefónica Dedicada</strong> y <strong>WhatsApp Corporativo</strong>.
+            Atención personalizada para los tesoreros y administradores de la Entidad vía <strong>Línea Telefónica Dedicada</strong> y <strong>WhatsApp Corporativo</strong>.
           </p>
         </div>
 
@@ -538,14 +547,14 @@
           <i data-lucide="bot" class="w-6 h-6 text-blue-900 mb-3"></i>
           <h4 class="font-bold text-sm text-slate-900 mb-2">BOT de Soporte a la Dispersión 24/7</h4>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Asistente virtual de WhatsApp enfocado 100% en el beneficiario: consulta de estado de giro, ubicación de corresponsales para retiro en efectivo, requisitos de cobro y atención a problemas de pago.
+            Asistente virtual de WhatsApp enfocado 100% en el beneficiario: consulta de estado de giro, puntos de retiro físico cercanos y solución a dudas de cobro.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 10. CONTENEDOR DE VIDEO DEMO -->
+  <!-- 9. CONTENEDOR DE VIDEO DEMO -->
   <section id="video-demo" class="py-16 bg-white border-t border-slate-200">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center mb-8">
@@ -553,32 +562,39 @@
         <h3 class="text-2xl font-bold text-slate-900">Video Demostrativo del Ecosistema ForeCash</h3>
       </div>
       
-      <div class="relative aspect-video rounded-3xl overflow-hidden bg-slate-100 border border-slate-300 shadow-lg">
-        <!-- Reemplazar el src con tu video real de Vimeo, YouTube o mp4 -->
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Video Presentación ForeCash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="relative aspect-video rounded-3xl overflow-hidden bg-slate-100 border border-slate-300 shadow-xl">
+        <!-- REEMPLAZAR EL SRC CON TU ENLACE EMBED DE YOUTUBE (EJ. https://www.youtube.com/embed/TU_CODIGO_AQUI) -->
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Video Presentación ForeCash AAvance Cruz Roja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
-  <!-- 11. ENTIDADES DESTINO -->
-  <section class="py-12 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-6 text-center">
-      <h4 class="text-xs font-extrabold text-blue-400 uppercase tracking-widest mb-6">Iniciativa Orientada a Instituciones Públicas y Cooperación</h4>
-      <div class="flex flex-wrap justify-center gap-4 text-xs font-bold">
-        <span class="bg-white/10 px-4 py-2 rounded-xl">UNGRD & Consejos de Riesgo</span>
-        <span class="bg-white/10 px-4 py-2 rounded-xl">Prosperidad Social (DPS)</span>
-        <span class="bg-white/10 px-4 py-2 rounded-xl">Ministerio de Vivienda</span>
-        <span class="bg-white/10 px-4 py-2 rounded-xl">APC Colombia</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 12. FOOTER INSTITUCIONAL -->
-  <footer class="bg-white text-slate-500 py-8 text-center text-xs border-t border-slate-200">
+  <!-- 10. FOOTER INSTITUCIONAL -->
+  <footer class="bg-slate-950 text-slate-400 py-10 text-center text-xs border-t border-slate-900">
     <p>© 2026 Alianza Estratégica Cruz Roja Colombiana (Seccional Cundinamarca y Bogotá) & AAvance Fintech.</p>
   </footer>
 
-  <!-- SCRIPT INTERACTIVO DE SIMULADOR -->
+  <!-- VENTANA MODAL FLOTANTE PARA CASOS DE USO -->
+  <div id="modal-caso" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 animate-in fade-in zoom-in duration-200">
+      <div id="modal-img-container" class="h-48 bg-slate-100 relative hidden">
+        <img id="modal-img" src="" alt="Detalle" class="w-full h-full object-cover">
+        <button onclick="cerrarCasoModal()" class="absolute top-4 right-4 bg-slate-950/60 hover:bg-slate-950 text-white rounded-full p-2 transition">
+          <i data-lucide="x" class="w-4 h-4"></i>
+        </button>
+      </div>
+      <div class="p-6">
+        <span id="modal-tag" class="bg-blue-100 text-blue-900 text-[10px] font-bold px-3 py-1 rounded-full uppercase">Categoría</span>
+        <h4 id="modal-titulo" class="text-xl font-bold text-slate-900 mt-3 mb-2">Título del Caso</h4>
+        <p id="modal-desc" class="text-xs text-slate-600 leading-relaxed mb-6">Descripción completa de la operación.</p>
+        <button onclick="cerrarCasoModal()" class="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 rounded-xl text-xs transition">
+          Entendido / Cerrar Ficha
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS INTERACTIVOS -->
   <script>
     lucide.createIcons();
     let ejecutadoTotal = 48500000;
@@ -589,7 +605,7 @@
 
       if (tipo === 'prefondeo') {
         titulo.innerText = "1. Módulo de Pre-fondeo (0% Riesgo de Sobregiro)";
-        desc.innerText = "Garantía de liquidez previa: la entidad deposita el 100% del presupuesto. El motor bloquea automáticamente cualquier orden sin fondos disponibles conciliados.";
+        desc.innerText = "Garantía de liquidez previa: la Entidad deposita el 100% del presupuesto. El motor de AAvance bloquea automáticamente cualquier orden sin fondos disponibles previamente conciliados.";
       } else if (tipo === 'documental') {
         titulo.innerText = "2. Gobernanza Documental de Tesorería";
         desc.innerText = "Permite cargar y adjuntar facturas, cuentas de cobro o actas a cada lote. Cada pago queda respaldado digitalmente para auditorías inmediatas.";
@@ -624,6 +640,28 @@
         tabla.insertAdjacentHTML('afterbegin', nuevaFila);
         btnText.innerText = 'Ejecutar Dispersión Inmediata Bre-B';
       }, 1000);
+    }
+
+    function abrirCasoModal(titulo, desc, tag, imgUrl) {
+      document.getElementById('modal-titulo').innerText = titulo;
+      document.getElementById('modal-desc').innerText = desc;
+      document.getElementById('modal-tag').innerText = tag;
+
+      const imgContainer = document.getElementById('modal-img-container');
+      const img = document.getElementById('modal-img');
+
+      if (imgUrl && imgUrl !== '') {
+        img.src = imgUrl;
+        imgContainer.classList.remove('hidden');
+      } else {
+        imgContainer.classList.add('hidden');
+      }
+
+      document.getElementById('modal-caso').classList.remove('hidden');
+    }
+
+    function cerrarCasoModal() {
+      document.getElementById('modal-caso').classList.add('hidden');
     }
   </script>
 </body>
