@@ -49,7 +49,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: scale(1.12); /* Elimina espacios o bordes blancos de seguridad del archivo fuente */
+      transform: scale(1.12);
     }
     .card-face-back {
       transform: rotateY(180deg);
@@ -92,7 +92,7 @@
     </div>
   </header>
 
-  <!-- 2. HERO SECTION CON DESTACADO WFP INNOVATION ACCELERATOR -->
+  <!-- 2. HERO SECTION CON 5º CUADRO WFP (OPCIÓN 2 INTEGRADA) -->
   <section class="relative pt-16 pb-20 bg-slate-900 text-white overflow-hidden">
     <div class="absolute inset-0 opacity-30">
       <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1600&auto=format&fit=crop" alt="Voluntarios Cruz Roja" class="w-full h-full object-cover">
@@ -100,10 +100,9 @@
     <div class="absolute inset-0 bg-gradient-to-r from-red-950/85 via-slate-950/90 to-blue-950/90"></div>
     
     <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-      <!-- BADGE DE AUTORIDAD WFP INNOVATION ACCELERATOR -->
-      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/40 px-4 py-2 rounded-full text-blue-200 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur shadow-lg">
-        <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
-        <span>Tecnología Validada por el WFP Innovation Accelerator (Programa Mundial de Alimentos - ONU)</span>
+      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-4 py-1.5 rounded-full text-blue-300 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
+        <span>Tecnología e Innovación de Impacto Social</span>
       </div>
       
       <h1 class="text-4xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl mx-auto mb-6">
@@ -114,8 +113,8 @@
         Unimos la legitimidad operativa en terreno de la <strong>Cruz Roja Colombiana</strong> con la potencia tecnológica de <strong>AAvance</strong>: trazabilidad bancaria total y 0% riesgo de sobregiro.
       </p>
 
-      <!-- MÉTRICAS CLAVE -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto bg-white/10 border border-white/15 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
+      <!-- MÉTRICAS CLAVE (5 CUADROS ALINEADOS) -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto bg-white/10 border border-white/15 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
         <div class="text-center p-2">
           <div class="text-3xl lg:text-4xl font-black text-blue-400">+$4.5M USD</div>
           <div class="text-[11px] text-slate-300 font-medium mt-1">Dispersados con 0% fraude y 0% duplicidad</div>
@@ -132,11 +131,16 @@
           <div class="text-3xl lg:text-4xl font-black text-amber-400">ISO 9001</div>
           <div class="text-[11px] text-slate-300 font-medium mt-1">1er Voluntariado certificado en Colombia</div>
         </div>
+        <!-- CUADRO 5: RECONOCIMIENTO OPCIÓN 2 -->
+        <div class="text-center p-2 col-span-2 md:col-span-1 border-t md:border-t-0 md:border-l border-white/10 pt-4 md:pt-0">
+          <div class="text-2xl lg:text-3xl font-black text-sky-300 uppercase">Impacto Global ONU</div>
+          <div class="text-[11px] text-slate-300 font-medium mt-1">Única Fintech en LatAm en el <i>Sprint Portfolio</i> del WFP Innovation Accelerator</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. LA SINERGIA GANADORA (FOTO VOLUNTARIO-CRUZROJA.JPG + RESPALDO WFP) -->
+  <!-- 3. LA SINERGIA GANADORA -->
   <section id="sinergia" class="py-16 bg-white border-b border-slate-200 relative overflow-hidden">
     <div class="absolute inset-0 opacity-15 pointer-events-none">
       <img src="voluntario-cruzroja.jpg" alt="Voluntario Cruz Roja en Terreno" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1600&auto=format&fit=crop';" />
@@ -228,7 +232,7 @@
           </div>
         </div>
 
-        <!-- TARJETA GIRATORIA 3D CON LEYENDA SIMPLIFICADA -->
+        <!-- TARJETA GIRATORIA 3D -->
         <div class="flex flex-col items-center justify-center pt-8 lg:pt-0">
           <div class="card-3d-wrap">
             <div class="card-3d-inner">
@@ -286,7 +290,7 @@
     </div>
   </section>
 
-  <!-- 6. CASOS DE USO OPERATIVOS (TITULAR CORREGIDO) -->
+  <!-- 6. CASOS DE USO OPERATIVOS -->
   <section id="casos" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -421,12 +425,12 @@
     </div>
   </section>
 
-  <!-- 8. SIMULADOR AAVANCE FORECASH (TITULAR DUPLICADO EN TAMAÑO Y FRASE REMOVIDA) -->
+  <!-- 8. SIMULADOR AAVANCE FORECASH -->
   <section id="dashboard" class="py-16 bg-slate-100 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-10">
-        <h2 class="text-5xl lg:text-7xl font-black text-blue-900 tracking-tight mb-3">AAvance ForeCash</h2>
-        <h3 class="text-xl lg:text-2xl font-bold text-slate-700">Control de Presupuesto y Gestión de Dispersiones 24/7</h3>
+        <h2 class="text-3xl lg:text-4xl font-black text-blue-900 tracking-tight mb-2">AAvance ForeCash</h2>
+        <h3 class="text-lg lg:text-xl font-bold text-slate-700">Control de Presupuesto y Gestión de Dispersiones 24/7</h3>
       </div>
 
       <!-- MOCKUP DEL DASHBOARD -->
