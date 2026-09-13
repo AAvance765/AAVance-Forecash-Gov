@@ -35,9 +35,6 @@
       transform-style: preserve-3d;
       animation: spin-card 10s infinite linear;
     }
-    .card-3d-inner:hover {
-      animation-play-state: paused;
-    }
     .card-face {
       position: absolute;
       width: 100%;
@@ -52,7 +49,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transform: scale(1.12); /* Elimina espacios/márgenes blancos de seguridad de la imagen original */
+      transform: scale(1.12); /* Elimina espacios o bordes blancos de seguridad del archivo fuente */
     }
     .card-face-back {
       transform: rotateY(180deg);
@@ -95,7 +92,7 @@
     </div>
   </header>
 
-  <!-- 2. HERO SECTION -->
+  <!-- 2. HERO SECTION CON DESTACADO WFP INNOVATION ACCELERATOR -->
   <section class="relative pt-16 pb-20 bg-slate-900 text-white overflow-hidden">
     <div class="absolute inset-0 opacity-30">
       <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1600&auto=format&fit=crop" alt="Voluntarios Cruz Roja" class="w-full h-full object-cover">
@@ -103,9 +100,10 @@
     <div class="absolute inset-0 bg-gradient-to-r from-red-950/85 via-slate-950/90 to-blue-950/90"></div>
     
     <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/30 px-4 py-1.5 rounded-full text-blue-300 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-yellow-400"></i>
-        <span>Tecnología e Innovación de Impacto Social</span>
+      <!-- BADGE DE AUTORIDAD WFP INNOVATION ACCELERATOR -->
+      <div class="inline-flex items-center space-x-2 bg-blue-500/20 border border-blue-400/40 px-4 py-2 rounded-full text-blue-200 text-xs font-bold uppercase tracking-wider mb-6 backdrop-blur shadow-lg">
+        <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+        <span>Tecnología Validada por el WFP Innovation Accelerator (Programa Mundial de Alimentos - ONU)</span>
       </div>
       
       <h1 class="text-4xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl mx-auto mb-6">
@@ -138,9 +136,8 @@
     </div>
   </section>
 
-  <!-- 3. LA SINERGIA GANADORA (CON TU FOTO VOLUNTARIO-CRUZROJA.JPG EN EL FONDO) -->
+  <!-- 3. LA SINERGIA GANADORA (FOTO VOLUNTARIO-CRUZROJA.JPG + RESPALDO WFP) -->
   <section id="sinergia" class="py-16 bg-white border-b border-slate-200 relative overflow-hidden">
-    <!-- Fondo sutil con tu foto de voluntario en terreno -->
     <div class="absolute inset-0 opacity-15 pointer-events-none">
       <img src="voluntario-cruzroja.jpg" alt="Voluntario Cruz Roja en Terreno" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=1600&auto=format&fit=crop';" />
     </div>
@@ -182,16 +179,16 @@
           </div>
           <ul class="space-y-3.5 text-xs text-slate-700 font-normal">
             <li class="flex items-start space-x-3">
-              <i data-lucide="award" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
-              <span><strong>Operador Financiero de Gran Experiencia:</strong> Especialistas en Fintech de impacto social para Gobiernos, Cooperaciones y ONGs. Primera y única en el <i>Sprint Portfolio</i> del **WFP Innovation Accelerator**.</span>
+              <i data-lucide="globe" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
+              <span><strong>Reconocimiento e Impacto Global ONU (WFP):</strong> Seleccionada en el exclusivo <i>Sprint Portfolio</i> del **WFP Innovation Accelerator (Programa Mundial de Alimentos)** como la única Fintech de impacto social en LatAm validada para transferencias monetarias.</span>
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="shield-check" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
-              <span><strong>Cobertura Integral de Entregas Monetarias:</strong> Interoperabilidad total con dispersiones masivas 7x24 para Bre-B y métodos digitales 5x8.</span>
+              <span><strong>Operador Financiero Humanitario:</strong> Aliado de más de 12 ONGs internacionales y agencias de cooperación con récord comprobado de 0% fraude y 0% duplicidad.</span>
             </li>
             <li class="flex items-start space-x-3">
               <i data-lucide="zap" class="w-4 h-4 text-blue-900 shrink-0 mt-0.5"></i>
-              <span><strong>Seguridad Regulada:</strong> Alianza estratégica con **Visa** (Visa Direct), certificación **PCI-DSS** y respaldo de **cores bancarios vigilados por la SFC**.</span>
+              <span><strong>Seguridad Regulada & Bre-B:</strong> Alianza estratégica con **Visa** (Visa Direct), certificación **PCI-DSS** e integración 7x24 con rieles del Banco de la República.</span>
             </li>
           </ul>
         </div>
@@ -199,7 +196,7 @@
     </div>
   </section>
 
-  <!-- 4. ECOSISTEMA DE LA TARJETA MARCA COMPARTIDA (RECORTADA PERFECTAMENTE EN 3D) -->
+  <!-- 4. ECOSISTEMA DE LA TARJETA MARCA COMPARTIDA -->
   <section id="ecosistema" class="py-16 bg-slate-900 text-white relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -231,7 +228,7 @@
           </div>
         </div>
 
-        <!-- TARJETA GIRATORIA 3D SIN BORDES BLANCOS -->
+        <!-- TARJETA GIRATORIA 3D CON LEYENDA SIMPLIFICADA -->
         <div class="flex flex-col items-center justify-center pt-8 lg:pt-0">
           <div class="card-3d-wrap">
             <div class="card-3d-inner">
@@ -245,16 +242,15 @@
               </div>
             </div>
           </div>
-          <span class="text-[10px] text-slate-400 mt-6 font-mono flex items-center space-x-1">
-            <i data-lucide="rotate-3d" class="w-3.5 h-3.5 text-blue-400"></i>
-            <span>Visualización 3D Interactiva de la Tarjeta (Pasa el cursor para pausar)</span>
+          <span class="text-[11px] text-slate-300 mt-6 font-semibold tracking-wide">
+            Imagen de la tarjeta actual
           </span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. CICLO DE VIDA DE LA EMERGENCIA (PRECISIÓN TÉCNICA 7x24 vs 5x8) -->
+  <!-- 5. CICLO DE VIDA DE LA EMERGENCIA -->
   <section id="ciclo" class="py-16 bg-slate-50 border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -290,13 +286,12 @@
     </div>
   </section>
 
-  <!-- 6. CASOS DE USO TANGIBLES (6 TARJETAS COMPLETAS RESTAURADAS CON NUEVA DE ECOSISTEMA) -->
+  <!-- 6. CASOS DE USO OPERATIVOS (TITULAR CORREGIDO) -->
   <section id="casos" class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
         <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Versatilidad Operativa</h2>
-        <h3 class="text-3xl font-bold text-slate-900">Casos de Uso Operativos (Haz Clic para Explorar)</h3>
-        <p class="text-xs text-slate-500 mt-2">Selecciona cualquier tarjeta para desplegar su ficha de operación detallada.</p>
+        <h3 class="text-3xl font-bold text-slate-900">Casos de Uso Operativos</h3>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -306,7 +301,6 @@
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop" alt="CVA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Transferencias Directas (CVA)</h4>
@@ -319,7 +313,6 @@
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop" alt="Acción Anticipatoria" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-amber-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Acción Anticipatoria & Riesgos</h4>
@@ -332,7 +325,6 @@
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?q=80&w=800&auto=format&fit=crop" alt="Capital Semilla" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-emerald-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Capital Semilla & Comercios</h4>
@@ -345,7 +337,6 @@
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" alt="Arriendos y Hábitat" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Subsidios de Arriendo & Materiales</h4>
@@ -358,7 +349,6 @@
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="Proveedores" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-slate-900 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Pago a Proveedores & Logística</h4>
@@ -366,12 +356,11 @@
           </div>
         </div>
 
-        <!-- TARJETA 6: FORTALECIMIENTO DEL ECOSISTEMA COMERCIAL (NUEVA) -->
+        <!-- TARJETA 6: FORTALECIMIENTO ECOSISTEMA -->
         <div onclick="abrirCasoModal('Fortalecimiento del Ecosistema Comercial', 'Aceleramos la recuperación de las zonas afectadas al restablecer el tejido comercial a partir de la entrega de ayudas, creando dinámica socioeconómica mediante inclusión financiera con mecanismos digitales de recepción, pago, ahorro y educación.', 'Reintegración y Desarrollo Local', 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop')" class="cursor-pointer group relative rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 border border-slate-200">
           <div class="h-48 overflow-hidden relative">
             <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=800&auto=format&fit=crop" alt="Ecosistema Comercial" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-            <span class="absolute top-4 left-4 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-full">Clic para ver detalle</span>
           </div>
           <div class="p-6 bg-white">
             <h4 class="font-bold text-base text-slate-900 mb-1 group-hover:text-blue-900 transition">Fortalecimiento Ecosistema Comercial</h4>
@@ -383,7 +372,7 @@
     </div>
   </section>
 
-  <!-- 7. ENTIDADES ALIADAS ESTRATÉGICAS (CON NOMBRES DESTACADOS Y AGRANDADOS) -->
+  <!-- 7. ENTIDADES ALIADAS ESTRATÉGICAS -->
   <section id="entidades" class="py-16 bg-slate-900 text-white border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-12">
@@ -432,13 +421,12 @@
     </div>
   </section>
 
-  <!-- 8. SIMULADOR AAVANCE FORECASH -->
+  <!-- 8. SIMULADOR AAVANCE FORECASH (TITULAR DUPLICADO EN TAMAÑO Y FRASE REMOVIDA) -->
   <section id="dashboard" class="py-16 bg-slate-100 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-10">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">AAvance ForeCash</h2>
-        <h3 class="text-3xl font-bold text-slate-900">Control de Presupuesto y Gestión de Dispersiones 24/7</h3>
-        <p class="text-xs text-slate-600 mt-2">Prueba el motor transaccional haciendo clic en los botones de inspección.</p>
+        <h2 class="text-5xl lg:text-7xl font-black text-blue-900 tracking-tight mb-3">AAvance ForeCash</h2>
+        <h3 class="text-xl lg:text-2xl font-bold text-slate-700">Control de Presupuesto y Gestión de Dispersiones 24/7</h3>
       </div>
 
       <!-- MOCKUP DEL DASHBOARD -->
@@ -702,21 +690,7 @@
     </div>
   </section>
 
-  <!-- 11. CONTENEDOR DE VIDEO DEMO -->
-  <section id="video-demo" class="py-16 bg-white border-t border-slate-200">
-    <div class="max-w-5xl mx-auto px-6">
-      <div class="text-center mb-8">
-        <h2 class="text-xs font-extrabold text-blue-900 uppercase tracking-widest mb-2">Material Audiovisual</h2>
-        <h3 class="text-2xl font-bold text-slate-900">Video Demostrativo del Ecosistema ForeCash</h3>
-      </div>
-      
-      <div class="relative aspect-video rounded-3xl overflow-hidden bg-slate-100 border border-slate-300 shadow-xl">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0" title="Video Presentación ForeCash AAvance Cruz Roja" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-  </section>
-
-  <!-- 12. FOOTER INSTITUCIONAL -->
+  <!-- 11. FOOTER INSTITUCIONAL -->
   <footer class="bg-slate-950 text-slate-400 py-10 text-center text-xs border-t border-slate-900">
     <p>© 2026 Alianza Estratégica Cruz Roja Colombiana (Seccional Cundinamarca y Bogotá) & AAvance Fintech.</p>
   </footer>
