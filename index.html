@@ -423,123 +423,119 @@
     </div>
   </section>
 
-  <!-- 8. SECCIÓN IMPACTO BENEFICIARIO (FOTO NÍTIDA Y VISIBLE EN TODO EL FONDO SIN CAPAS NEGRAS + CASILLAS GLASSMORPHISM BLANCAS) -->
-  <section id="impacto" class="relative py-24 bg-slate-100 overflow-hidden border-t border-slate-200">
-    <!-- FOTO DE LA MUJER CON LA TARJETA COMPLETAMENTE VISIBLE Y BRILLANTE -->
+  <!-- 8. SECCIÓN IMPACTO BENEFICIARIO (ESTILO STUDIO PÁGINA 2: FOTO A LA IZQUIERDA Y PANEL SUAVE EN LA DERECHA) -->
+  <section id="impacto" class="relative py-24 bg-slate-950 text-white overflow-hidden border-t border-slate-800">
+    <!-- IMAGEN DE FONDO COMPLETA DE LA MUJER CON LA TARJETA (ENFOCADA A LA IZQUIERDA) -->
     <div class="absolute inset-0">
-      <img src="beneficiario-cruzroja.jpg" alt="Beneficiaria Cruz Roja con tarjeta AAvance en la mano" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1600&auto=format&fit=crop';" />
-      <!-- Capa suave de tinte claro solo para garantizar lectura sin tapar ni oscurecer a la mujer -->
-      <div class="absolute inset-0 bg-slate-900/25"></div>
+      <img src="beneficiario-cruzroja.jpg" alt="Beneficiaria Cruz Roja AAvance" class="w-full h-full object-cover object-left-top" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1600&auto=format&fit=crop';" />
+      <!-- Sombra progresiva de derecha a izquierda para suavizar el panel sobre el fondo -->
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/20 via-slate-950/60 to-slate-950/95"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
-      
-      <!-- HEADER CON PREMISA DESTACADA GRANDE -->
-      <div class="text-center max-w-4xl mx-auto mb-14">
-        <span class="bg-blue-900 text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4 inline-block shadow-md">
-          Enfoque Humano y Social
-        </span>
+      <div class="grid lg:grid-cols-12 gap-8 items-end min-h-[580px]">
         
-        <h2 class="text-3xl lg:text-5xl font-black text-slate-900 drop-shadow-sm leading-tight mb-6">
-          Impacto Transformador en el Beneficiario Final
-        </h2>
-
-        <!-- PREMISA INNEGOCIABLE EN CUADRO DESTACADO GRANDE BLANCO CON SOMBRA -->
-        <div class="bg-white/95 border-2 border-amber-400 p-6 lg:p-8 rounded-3xl shadow-2xl backdrop-blur-md max-w-3xl mx-auto">
-          <span class="text-[11px] font-extrabold uppercase tracking-widest text-amber-700 block mb-1">Premisa Innegociable</span>
-          <p class="text-lg lg:text-xl font-bold text-slate-900 leading-relaxed italic">
-            "Dignidad y $0 COP: La asistencia humanitaria nunca debe representar un costo ni una carga para quien la recibe."
-          </p>
-        </div>
-      </div>
-
-      <!-- GRID DE LOS 7 PILARES SOBRE CASILLAS BLANCAS CRISTAL (GLASSMORPHISM LUMINOSO) -->
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        
-        <!-- PILAR 1 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-blue-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-blue-100 text-blue-900 flex items-center justify-center mb-4 group-hover:bg-blue-900 group-hover:text-white transition">
-            <i data-lucide="heart" class="w-5 h-5"></i>
+        <!-- COSTADO IZQUIERDO: DEJA LIBRE LA IMAGEN DE LA MUJER, SUS MANOS Y LA TARJETA. PREMISA ABAJO -->
+        <div class="lg:col-span-5 flex flex-col justify-end space-y-4">
+          <!-- ESPACIO LIBRE ARRIBA DONDE RESALTA LA FOTO Y SUS MANOS -->
+          <div class="bg-slate-950/70 border border-amber-400/40 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block mb-1">Premisa Innegociable</span>
+            <p class="text-base lg:text-lg font-bold text-amber-200 leading-relaxed italic">
+              "Dignidad y $0 COP: La asistencia humanitaria nunca debe representar un costo ni una carga para quien la recibe."
+            </p>
           </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            1. Dignidad de Elección
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">Libertad de Comprar lo que Necesitan</p>
         </div>
 
-        <!-- PILAR 2 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-emerald-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-emerald-100 text-emerald-900 flex items-center justify-center mb-4 group-hover:bg-emerald-700 group-hover:text-white transition">
-            <i data-lucide="store" class="w-5 h-5"></i>
+        <!-- COSTADO DERECHO: PANEL CONTENEDOR SUAVE EN CRISTAL TRANSLÚCIDO (ESTILO STUDIO) -->
+        <div class="lg:col-span-7 bg-slate-950/75 border border-white/15 p-8 rounded-3xl backdrop-blur-xl shadow-2xl">
+          <div class="mb-6">
+            <span class="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-[11px] font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-2">
+              Enfoque Humano y Social
+            </span>
+            <h2 class="text-2xl lg:text-4xl font-black text-white leading-tight">
+              Impacto Transformador en el Beneficiario Final
+            </h2>
           </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            2. Reactivación Económica Local
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">Circulación de Fondos en el Territorio</p>
-        </div>
 
-        <!-- PILAR 3 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-amber-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-amber-100 text-amber-900 flex items-center justify-center mb-4 group-hover:bg-amber-600 group-hover:text-white transition">
-            <i data-lucide="zap" class="w-5 h-5"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            3. Atención 7X24 vía Bre-B
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">En Tiempo Récord</p>
-        </div>
+          <!-- LISTA DE LOS 7 PILARES EN TARJETAS SUAVES Y ELEGANTES -->
+          <div class="space-y-2.5">
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-blue-500/20 text-blue-300 flex items-center justify-center shrink-0">
+                <i data-lucide="heart" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">1. Dignidad de Elección</strong>
+                <span class="text-slate-300 font-light">Libertad de Comprar lo que Necesitan</span>
+              </div>
+            </div>
 
-        <!-- PILAR 4 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-purple-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-purple-100 text-purple-900 flex items-center justify-center mb-4 group-hover:bg-purple-800 group-hover:text-white transition">
-            <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            4. Interoperabilidad Total
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">Aprovechamiento de Cuentas y Billeteras Existentes</p>
-        </div>
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0">
+                <i data-lucide="store" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">2. Reactivación Económica Local</strong>
+                <span class="text-slate-300 font-light">Circulación de Fondos en el Territorio</span>
+              </div>
+            </div>
 
-        <!-- PILAR 5 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-sky-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-sky-100 text-sky-900 flex items-center justify-center mb-4 group-hover:bg-sky-700 group-hover:text-white transition">
-            <i data-lucide="credit-card" class="w-5 h-5"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            5. Inclusión Financiera
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">y Bancarización Opcional</p>
-        </div>
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-300 flex items-center justify-center shrink-0">
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">3. Atención 7X24 vía Bre-B</strong>
+                <span class="text-slate-300 font-light">En Tiempo Récord</span>
+              </div>
+            </div>
 
-        <!-- PILAR 6 -->
-        <div class="bg-white/90 border border-white/80 p-6 rounded-3xl backdrop-blur-md shadow-xl hover:bg-white hover:border-red-500 transition group">
-          <div class="w-10 h-10 rounded-2xl bg-red-100 text-red-900 flex items-center justify-center mb-4 group-hover:bg-red-700 group-hover:text-white transition">
-            <i data-lucide="shield-check" class="w-5 h-5"></i>
-          </div>
-          <h3 class="font-bold text-base text-slate-900 tracking-wide leading-snug">
-            6. Operación 100% Gratuita
-          </h3>
-          <p class="text-xs font-medium text-slate-600 mt-1.5">$0 COP y Retiros en Cajeros Sin Costo</p>
-        </div>
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-purple-500/20 text-purple-300 flex items-center justify-center shrink-0">
+                <i data-lucide="arrow-left-right" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">4. Interoperabilidad Total</strong>
+                <span class="text-slate-300 font-light">Aprovechamiento de Cuentas y Billeteras Existentes</span>
+              </div>
+            </div>
 
-        <!-- PILAR 7 DESTACADO EN ANCHO COMPLETO AL FINAL -->
-        <div class="md:col-span-2 lg:col-span-3 bg-blue-900/90 border border-blue-400/30 p-6 rounded-3xl backdrop-blur-md text-center text-white hover:bg-blue-900 transition shadow-2xl">
-          <div class="w-11 h-11 rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center mb-3 mx-auto font-bold shadow-md">
-            <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-sky-500/20 text-sky-300 flex items-center justify-center shrink-0">
+                <i data-lucide="credit-card" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">5. Inclusión Financiera</strong>
+                <span class="text-slate-300 font-light">y Bancarización Opcional</span>
+              </div>
+            </div>
+
+            <div class="bg-white/10 hover:bg-white/15 border border-white/10 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-red-500/20 text-red-300 flex items-center justify-center shrink-0">
+                <i data-lucide="shield-check" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">6. Operación 100% Gratuita</strong>
+                <span class="text-slate-300 font-light">$0 COP y Retiros en Cajeros Sin Costo</span>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-amber-500/20 via-white/10 to-amber-500/20 border border-amber-400/40 p-3.5 rounded-2xl flex items-center space-x-3.5 transition">
+              <div class="w-8 h-8 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center shrink-0 font-bold">
+                <i data-lucide="graduation-cap" class="w-4 h-4"></i>
+              </div>
+              <div class="text-xs">
+                <strong class="text-white block font-bold text-sm">7. Educación Esencial Digital y Financiera</strong>
+                <span class="text-amber-300 font-semibold">Plataforma AAvance Academy Gratuita</span>
+              </div>
+            </div>
           </div>
-          <h3 class="font-black text-lg text-white tracking-wide">
-            7. Educación Esencial Digital y Financiera
-          </h3>
-          <p class="text-xs font-semibold text-amber-300 mt-1">
-            Plataforma AAvance Academy Gratuita
-          </p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- 9. SIMULADOR AAVANCE FORECASH (EXPANDIDO EN ANCHO MAX-W-6XL CON GRAN PRESENCIA) -->
+  <!-- 9. SIMULADOR AAVANCE FORECASH -->
   <section id="dashboard" class="py-20 bg-slate-100 border-y border-slate-200 relative">
     <div class="max-w-7xl mx-auto px-6">
       
