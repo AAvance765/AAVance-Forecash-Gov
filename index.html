@@ -423,24 +423,23 @@
     </div>
   </section>
 
-  <!-- 8. SECCIÓN IMPACTO BENEFICIARIO (ESTILO STUDIO PÁGINA 2: FOTO A LA IZQUIERDA Y PANEL SUAVE EN LA DERECHA) -->
+  <!-- 8. SECCIÓN IMPACTO BENEFICIARIO (FOTO LADO IZQUIERDO 100% BRILLANTE + PREMISA EN BLANCO + PANEL DERECHO SUAVE) -->
   <section id="impacto" class="relative py-24 bg-slate-950 text-white overflow-hidden border-t border-slate-800">
-    <!-- IMAGEN DE FONDO COMPLETA DE LA MUJER CON LA TARJETA (ENFOCADA A LA IZQUIERDA) -->
+    <!-- IMAGEN DE FONDO COMPLETA DE LA MUJER CON LA TARJETA (NÍTIDA Y SIN SOMBRA EN LA IZQUIERDA) -->
     <div class="absolute inset-0">
       <img src="beneficiario-cruzroja.jpg" alt="Beneficiaria Cruz Roja AAvance" class="w-full h-full object-cover object-left-top" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1600&auto=format&fit=crop';" />
-      <!-- Sombra progresiva de derecha a izquierda para suavizar el panel sobre el fondo -->
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950/20 via-slate-950/60 to-slate-950/95"></div>
+      <!-- GRADIENTE SUAVE: TOTALMENTE TRANSPARENTE A LA IZQUIERDA Y OSCURO A LA DERECHA PARA EL PANEL -->
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-slate-950/40 to-slate-950/90"></div>
     </div>
 
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       <div class="grid lg:grid-cols-12 gap-8 items-end min-h-[580px]">
         
-        <!-- COSTADO IZQUIERDO: DEJA LIBRE LA IMAGEN DE LA MUJER, SUS MANOS Y LA TARJETA. PREMISA ABAJO -->
+        <!-- COSTADO IZQUIERDO: IMAGEN NÍTIDA CON SUS MANOS Y TARJETA VISIBLES + PREMISA EN BLANCO ABAJO -->
         <div class="lg:col-span-5 flex flex-col justify-end space-y-4">
-          <!-- ESPACIO LIBRE ARRIBA DONDE RESALTA LA FOTO Y SUS MANOS -->
-          <div class="bg-slate-950/70 border border-amber-400/40 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
-            <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-400 block mb-1">Premisa Innegociable</span>
-            <p class="text-base lg:text-lg font-bold text-amber-200 leading-relaxed italic">
+          <div class="bg-slate-950/65 border border-white/20 p-6 rounded-3xl backdrop-blur-md shadow-2xl">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-slate-300 block mb-1">Premisa Innegociable</span>
+            <p class="text-base lg:text-lg font-bold text-white leading-relaxed italic">
               "Dignidad y $0 COP: La asistencia humanitaria nunca debe representar un costo ni una carga para quien la recibe."
             </p>
           </div>
